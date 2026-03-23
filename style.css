@@ -1,0 +1,742 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #2c3e50;
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #1abc9c;
+}
+
+/* HEADINGS */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #34495e;
+}
+
+/* COMMON CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    width: auto;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* INPUT */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: #fff;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* MESSAGES */
+.success {
+    color: green;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+    font-weight: 500;
+}
+
+/* FORM CENTER */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.form-box {
+    width: 550px;
+    max-width: 95%;
+}
+
+/* DASHBOARD */
+.dashboard {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.card-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    width: 260px;
+    text-align: center;
+}
+
+/* EVENTS */
+.events-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.event-card {
+    width: 260px;
+}
+
+/* BOOKINGS */
+.bookings-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.bookings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.booking-card {
+    width: 260px;
+}
+
+/* BOOK TICKET PAGE */
+.booking-container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.booking-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.booking-form {
+    width: 350px;
+}
+
+/* LOGIN & REGISTER */
+.full-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.auth-box {
+    width: 500px;
+    max-width: 95%;
+}
+
+/* ANIMATION */
+.form-box {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #777;
+}
+/* Event Action Buttons */
+.event-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Smaller buttons */
+.btn-sm {
+    flex: 1;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Different colors */
+.btn-book {
+    background: #3498db;
+}
+
+.btn-edit {
+    background: #f39c12;
+}
+
+.btn-delete {
+    background: #e74c3c;
+}
+/* Button Group (Events Page) */
+.event-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Small buttons */
+.btn-sm {
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Colors */
+.btn-book {
+    background: #3498db;
+}
+
+.btn-edit {
+    background: #f39c12;
+}
+
+.btn-delete {
+    background: #e74c3c;
+}
+/* Button Row */
+.event-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Small buttons */
+.btn-sm {
+    flex: 1;
+    padding: 8px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Colors */
+.btn-book {
+    background: #3498db;
+}
+
+.btn-edit {
+    background: #f39c12;
+}
+
+.btn-delete {
+    background: #e74c3c;
+}
+.booking-card {
+    border-left: 5px solid #3498db;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Dashboard Layout */
+.dashboard {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.welcome p {
+    color: #777;
+}
+
+/* Card Grid */
+.dashboard-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Big Cards */
+.dashboard-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Card Image */
+.dashboard-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Card Button */
+.dashboard-card .btn {
+    margin-top: 15px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+/* Activity */
+.activity {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Tickets Container */
+.tickets-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Grid */
+.tickets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Ticket Card */
+.ticket-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Top Section */
+.ticket-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Event Image */
+.ticket-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+}
+
+.badge.concert { background: #9b59b6; }
+.badge.conference { background: #3498db; }
+.badge.sport { background: #27ae60; }
+.badge.festival { background: #f39c12; }
+.badge.comedy { background: #e74c3c; }
+
+/* Info */
+.ticket-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Divider */
+.ticket-divider {
+    margin: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Status */
+.status {
+    color: green;
+    font-weight: bold;
+}
+/* Events Container */
+.events-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Grid */
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Event Card */
+.event-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.event-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Title */
+.event-card h3 {
+    margin: 10px 0 5px;
+}
+
+/* Badge */
+.event-badge {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Info */
+.event-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Button Group */
+.btn-group {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+/* Buttons */
+.btn-small {
+    flex: 1;
+    padding: 8px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-book { background: #3498db; }
+.btn-edit { background: #f39c12; }
+.btn-delete { background: #e74c3c; }
+
+.btn-small:hover {
+    opacity: 0.9;
+}
+/* Tickets Container */
+.tickets-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Grid */
+.tickets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Ticket Card */
+.ticket-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.ticket-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Image */
+.ticket-header img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Title */
+.ticket-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Badge */
+.ticket-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+    margin-top: 3px;
+}
+
+.badge-concert { background: #9b59b6; }
+.badge-tech { background: #3498db; }
+.badge-sport { background: #27ae60; }
+
+/* Divider */
+.ticket-divider {
+    margin: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+/* Info */
+.ticket-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Status */
+.status-paid {
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer text */
+.ticket-footer {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+/* Booking Page */
+.booking-page {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Grid Layout */
+.booking-layout {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Cards */
+.booking-card {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Titles */
+.booking-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Input */
+.booking-card input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button */
+.booking-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-btn:hover {
+    background: #357abd;
+}
+
+/* Info */
+.booking-info p {
+    margin: 6px 0;
+}
+/* Dashboard Layout */
+.dashboard {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Welcome */
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.dashboard-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.dashboard-card {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Activity */
+.activity {
+    margin-top: 50px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+.cancel-btn {
+    background: #e74c3c;
+    margin-top: 10px;
+}
+
+.cancel-btn:hover {
+    background: #c0392b;
+}
